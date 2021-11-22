@@ -1,0 +1,46 @@
+.home-container{
+    @include container();
+    @include display-flex(space-between, initial );
+    flex-direction: column;
+}
+
+header, .logo-wrapper,.nav-menu{
+    @include display-flex(space-between, center);
+
+    .logo-wrapper{
+        &__icon{
+            width: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        h4{
+            color: $text-color;
+        }
+    }
+
+    .nav-menu> a{
+        margin-left: 2rem;
+        padding: 5px;
+    }
+}
+
+.home-content{
+    max-width: 650px;
+    margin-bottom: 3rem;
+    h1{
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 4rem;
+        letter-spacing: 12px;
+        color: $primary-color;
+    }
+
+    .icon-wrapper{
+        margin-top: 1rem;
+        font-size: 2.5rem;
+        @include display-flex(none, center);
+
+        &__link{
+            padding-right: 1rem;
+        }
+    }
+}

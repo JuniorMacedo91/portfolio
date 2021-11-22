@@ -2,6 +2,9 @@
 
 // font-family: 'Alfa Slab One', cursive;
 
+$primary-color: #00394B;
+$text-color:#848484;
+
 *{
     margin: 0;
     padding: 0;
@@ -10,4 +13,26 @@
     outline: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+a, li, i{
+    color: $primary-color;
+}
+
+p{
+    color: $text-color;
+}
+
+@mixin container {
+    width: 100%;
+    height: 100vh;
+    padding: 1.5rem 3.5rem;
+}
+
+@mixin display-flex( $justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
 }
