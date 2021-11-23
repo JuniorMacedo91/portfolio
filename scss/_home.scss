@@ -1,7 +1,36 @@
+#home{
+    &::before, &::after{
+        position: absolute;
+        color: #ebebeb;
+        font-family: "Playfair Display", sans-serif;
+        text-shadow: -6px 4px 15px rgba(0, 0, 0, 0.25);
+        z-index: -1;
+    }
+
+    &::before{
+        content: 'J';
+        font-size: 100vh;
+        bottom: 0;
+        right: 18rem;
+    }
+
+    &::after{
+        content: 'M';
+        font-size: 30rem;
+        bottom: -5rem;
+        right: 0;
+        z-index: -2;
+    }
+}
+
 .home-container{
     @include container();
     @include display-flex(space-between, initial );
     flex-direction: column;
+
+    header{
+        padding: 1rem 0px;
+    }
 }
 
 header, .logo-wrapper,.nav-menu{
@@ -27,12 +56,13 @@ header, .logo-wrapper,.nav-menu{
 
 .home-content{
     max-width: 650px;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     h1{
+        color: $primary-color;
         font-family: 'Fjalla One', sans-serif;
         font-size: 5rem;
         letter-spacing: 5px;
-        color: $primary-color;
+        font-weight: bolder;
     }
 
     .icon-wrapper{

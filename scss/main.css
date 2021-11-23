@@ -21,6 +21,29 @@ p {
   margin: 1rem 0px;
 }
 
+#home::before, #home::after {
+  position: absolute;
+  color: #ebebeb;
+  font-family: "Playfair Display", sans-serif;
+  text-shadow: -6px 4px 15px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+#home::before {
+  content: 'J';
+  font-size: 100vh;
+  bottom: 0;
+  right: 18rem;
+}
+
+#home::after {
+  content: 'M';
+  font-size: 30rem;
+  bottom: -5rem;
+  right: 0;
+  z-index: -2;
+}
+
 .home-container {
   width: 100%;
   height: 100vh;
@@ -38,6 +61,10 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.home-container header {
+  padding: 1rem 0px;
 }
 
 header, .logo-wrapper, .nav-menu {
@@ -68,14 +95,15 @@ header .nav-menu > a, .logo-wrapper .nav-menu > a, .nav-menu .nav-menu > a {
 
 .home-content {
   max-width: 650px;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .home-content h1 {
+  color: #00394B;
   font-family: 'Fjalla One', sans-serif;
   font-size: 5rem;
   letter-spacing: 5px;
-  color: #00394B;
+  font-weight: bolder;
 }
 
 .home-content .icon-wrapper {
