@@ -194,20 +194,4 @@ nav .nav-menu > a {
   padding: 5px;
   font-size: 1.5rem;
 }
-
-.menu-btn.open .menu-btn__burger {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  background: transparent;
-}
-
-.menu-btn.open .menu-btn__burger::before {
-  -webkit-transform: rotate(45deg) translate(35px, -35px);
-          transform: rotate(45deg) translate(35px, -35px);
-}
-
-.menu-btn.open .menu-btn__burger::after {
-  -webkit-transform: rotate(-45deg) translate(35px, 35px);
-          transform: rotate(-45deg) translate(35px, 35px);
-}
 /*# sourceMappingURL=main.css.map */
