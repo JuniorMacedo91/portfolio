@@ -1,0 +1,70 @@
+@mixin transitionEase {
+    transition: all .5s linear;
+}
+
+.menu-btn{
+    width: 45px;
+    height: 35px;
+    cursor: pointer;
+    @include display-flex(center, center);
+    @include transitionEase();
+
+    &__burger{
+        width: 30px;
+        height: 3px;
+        background-color: $primary-color;
+        border-radius: 5px;
+        @include transitionEase();
+
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            background-color: $primary-color;
+            border-radius: 5px;
+            @include transitionEase();
+        }
+
+        &::before{
+            transform: translateY(-8px);
+        }
+
+        &::after{
+            transform: translateY(8px);
+        }
+    }
+}
+
+nav{
+    @include display-flex(center,center);
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.102);
+    backdrop-filter: blur(10px);
+    z-index: -3;
+    @include transitionEase();
+    
+    .nav-menu> a{
+        text-align: center;
+        padding: 5px;
+        font-size: 1.5rem;
+    }
+}
+
+.menu-btn.open .menu-btn__burger{
+    transform: translateX(-50px);
+    background: transparent;
+
+    &::before{
+        transform:  rotate(45deg) translate(35px, -35px);
+    }
+
+    &::after{
+        transform:  rotate(-45deg) translate(35px, 35px);
+    }
+}
+

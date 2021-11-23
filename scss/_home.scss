@@ -33,8 +33,9 @@
     }
 }
 
-header, .logo-wrapper,.nav-menu{
+header, .logo-wrapper{
     @include display-flex(space-between, center);
+    z-index: 4;
 
     .logo-wrapper{
         &__icon{
@@ -45,11 +46,6 @@ header, .logo-wrapper,.nav-menu{
         h4{
             color: $text-color;
         }
-    }
-
-    .nav-menu> a{
-        margin-left: 2rem;
-        padding: 5px;
     }
 }
 
