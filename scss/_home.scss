@@ -24,18 +24,18 @@ header, .logo-wrapper,.nav-menu{
     }
 }
 
+
 .home-content{
     max-width: 650px;
     margin-bottom: 3rem;
     h1{
-        font-family: 'Alfa Slab One', cursive;
-        font-size: 4rem;
-        letter-spacing: 12px;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 5rem;
+        letter-spacing: 5px;
         color: $primary-color;
     }
 
     .icon-wrapper{
-        margin-top: 1rem;
         font-size: 2.5rem;
         @include display-flex(none, center);
 
