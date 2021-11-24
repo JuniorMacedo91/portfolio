@@ -6,7 +6,7 @@ let menuToggle = false
 menuBurger.addEventListener('click', ()=>{
     if(!menuToggle){
         menuBurger.classList.add('open')
-        navbar.style.width = '350px'
+        navbar.style.width = '300px'
         menuToggle = true
     } else{
         menuBurger.classList.remove('open')
