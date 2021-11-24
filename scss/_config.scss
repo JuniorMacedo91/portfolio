@@ -12,7 +12,6 @@ $text-color:#848484;
     list-style: none;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
-    overflow: hidden;
 }
 
 a, li, i{
@@ -22,6 +21,21 @@ a, li, i{
 p{
     color: $text-color;
     margin: 1rem 0px;
+}
+
+button{
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover{
+        color: white;
+        background-color: black;
+        transition: .2s ease-in;
+    }
 }
 
 @mixin container {

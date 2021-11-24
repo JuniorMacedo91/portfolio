@@ -1,0 +1,24 @@
+.about{
+    @include container();
+    @include display-flex(center,center);
+
+    &__title, &__content{
+        padding:4rem 1rem;
+    }
+
+    &__title{
+        align-self: flex-start;
+        h1{
+            font-size: 4.5rem;
+            text-align: right;
+            font-family: "Playfair Display", sans-serif;
+        }
+    }
+
+    &__content{
+        align-self: flex-end;
+    }
+}
+
+
+

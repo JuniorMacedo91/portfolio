@@ -46,6 +46,7 @@ nav{
     background-color: rgba(0, 0, 0, 0.102);
     backdrop-filter: blur(10px);
     z-index: -3;
+    overflow: hidden;
     @include transitionEase();
     
     .nav-menu> a{

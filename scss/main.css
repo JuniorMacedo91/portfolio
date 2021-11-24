@@ -9,7 +9,6 @@
   list-style: none;
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
-  overflow: hidden;
 }
 
 a, li, i {
@@ -19,6 +18,26 @@ a, li, i {
 p {
   color: #848484;
   margin: 1rem 0px;
+}
+
+button {
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid black;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+#home {
+  position: relative;
 }
 
 #home::before, #home::after {
@@ -51,23 +70,15 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: initial;
-      -ms-flex-align: initial;
-          align-items: initial;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.home-container header {
-  padding: 1rem 0px;
-}
-
-header, .logo-wrapper {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,15 +88,32 @@ header, .logo-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 1.5rem 3.5rem;
+  top: 0;
+  left: 0;
   z-index: 4;
 }
 
-header .logo-wrapper__icon, .logo-wrapper .logo-wrapper__icon {
+header .logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo-wrapper__icon {
   width: 1.5rem;
   margin-right: 1rem;
 }
 
-header .logo-wrapper h4, .logo-wrapper .logo-wrapper h4 {
+header .logo-wrapper h4 {
   color: #848484;
 }
 
@@ -117,6 +145,10 @@ header .logo-wrapper h4, .logo-wrapper .logo-wrapper h4 {
 
 .home-content .icon-wrapper__link {
   padding-right: 1rem;
+}
+
+.home-content .icon-wrapper .contact-btn {
+  padding: none;
 }
 
 .menu-btn {
@@ -185,6 +217,7 @@ nav {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   z-index: -3;
+  overflow: hidden;
   -webkit-transition: all .5s linear;
   transition: all .5s linear;
 }
@@ -193,5 +226,40 @@ nav .nav-menu > a {
   text-align: center;
   padding: 5px;
   font-size: 1.5rem;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  padding: 1.5rem 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__title, .about__content {
+  padding: 4rem 1rem;
+}
+
+.about__title {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.about__title h1 {
+  font-size: 4.5rem;
+  text-align: right;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.about__content {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 /*# sourceMappingURL=main.css.map */
