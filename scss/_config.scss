@@ -15,6 +15,11 @@ $text-color:#848484;
 
 a, li, i{
     color: #000000;
+
+    &:hover{
+        transform: scale(1.05);
+        transition: .1s ease-in;
+    }
 }
 
 p{

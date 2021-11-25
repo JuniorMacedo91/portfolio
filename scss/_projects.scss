@@ -9,6 +9,7 @@
         place-items: center;
         grid-template: auto auto auto / auto auto auto;
         gap: 1.5rem;
+        padding-top: 4rem;
     }
 
     img{
@@ -40,11 +41,12 @@
         h1{
             text-transform: uppercase;
             font-weight: bolder;
+            font-family: 'Fjalla One', sans-serif;
         }
 
         p{color: #fff;}
 
-        i{
+        a{
             justify-self: right;
             font-size: 2.5rem;
         }
