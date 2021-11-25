@@ -1,6 +1,12 @@
 #projects{
-    @include container();
+    @include container(100%,100%);
     text-align: right;
+    background-color: $primary-color;
+
+    .page-name{
+        @include stroke(transparent, 2px, #fff);
+        text-align:left;
+    }
 }
 
 .grid-pictures{
@@ -15,7 +21,7 @@
     img{
         position: relative;
         width: 100%;
-        box-shadow:  0px 5px 10px rgba(11, 11, 11, 0.476);
+        box-shadow:  0px 8px 12px rgb(0, 0, 0);
     }
 }
 

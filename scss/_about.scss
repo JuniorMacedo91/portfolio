@@ -1,25 +1,26 @@
 .about{
-    @include container();
-    @include display-flex(center,center);
+    @include container(100%, 100%);
 
-    &__title, &__content{
-        padding:4rem 1rem;
+    .page-name{
+        @include stroke(transparent, 2px, #000000)
     }
 
-    &__title{
-        border-right: 2px solid black;
-        padding-bottom:  6rem;
-        h1{
-            font-size: 4.5rem;
-            text-align: right;
-            font-family: "Playfair Display", sans-serif;
+    .about-content-wrapper{
+        @include display-flex(center,center);
+
+        .about__title, .about__content{
+            padding:4rem 1rem;
+        }
+    
+        .about__title{
+            border-right: 2px solid black;
+            padding-bottom: 6rem;
+            h1{
+                font-size: 4.5rem;
+                text-align: right;
+                font-family: 'Anton', sans-serif;
+            }
         }
     }
-
-    &__content{
-        align-self: flex-end;
-    }
 }
-
-
 

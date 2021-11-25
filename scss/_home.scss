@@ -1,9 +1,11 @@
 .home-container{
-    @include container();
+    @include container(100%, 100vh);
     @include display-flex(center,center);
-    background-color: #000000;
+    background-color: $primary-color;
     color: #fff;
 }
+
+
 
 
 header{
@@ -13,7 +15,7 @@ header{
     padding: 1rem 3.5rem;
     top: 0;
     left: 0;
-    background-color: #000000;
+    background-color: $primary-color;
     z-index: 4;
 
     .logo-wrapper{
@@ -21,10 +23,6 @@ header{
         &__icon{
             width: 1.5rem;
             margin-right: 1rem;
-        }
-
-        h4{
-            color: $text-color;
         }
     }
 }
@@ -36,9 +34,9 @@ header{
     gap: 0px 1rem;
 
     h1{
-        font-family: 'Fjalla One', sans-serif;
+        font-family: 'Anton', sans-serif;
         font-size: 7vw;
-        letter-spacing: 7px;
+        letter-spacing: 5px;
         text-align: right;
     }
 
@@ -47,19 +45,7 @@ header{
         align-self: flex-end;
     };
 
-    i{color: white};
-
-    button{
-        color: #fff;
-        border: 2px solid #fff;
-        margin-bottom: 12px;
-    
-        &:hover{
-            color: black;
-            background-color: white;
-            transition: .2s ease-in;
-        } 
-    }
+    button{margin-bottom: 12px}
 }
 
 .icon-wrapper{
@@ -74,7 +60,7 @@ header{
 }
 
 footer{
-    background-color: #000000;
+    background-color: $primary-color;
     color: #fff;
     padding: 2rem;
     text-align: center;
@@ -84,7 +70,6 @@ footer{
     }
 
     i{
-        color: white;
         font-size: 2.5rem;
         padding-bottom: 1rem;
     }

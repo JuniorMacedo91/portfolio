@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:wght@700&family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Poppins:wght@300;500&display=swap');
 
+$primary-color: #121212;
 $text-color:#848484;
 
 *{
@@ -14,9 +15,10 @@ $text-color:#848484;
 }
 
 a, li, i{
-    color: #000000;
+    color: #fff;
 
     &:hover{
+        
         transform: scale(1.05);
         transition: .1s ease-in;
     }
@@ -34,23 +36,23 @@ p{
 
 button{
     padding: 5px 15px;
-    border-radius: 20px;
-    color: #000000;
+    border-radius: 5px;
+    color: #fff;
     background-color: transparent;
-    border: 2px solid #000000;
+    border: 1px solid #fff;
     font-size: 1rem;
     cursor: pointer;
 
     &:hover{
-        color: white;
-        background-color: black;
+        color: #000000;
+        background-color: #fff;
         transition: .2s ease-in;
     }
 }
 
-@mixin container {
-    width: 100%;
-    height: 100vh;
+@mixin container($width, $height) {
+    width: $width;
+    height: $height;
     padding: 1.5rem 3.5rem;
 }
 
@@ -58,4 +60,19 @@ button{
     display: flex;
     justify-content: $justify;
     align-items: $align;
+}
+
+@mixin stroke($fill-color, $stroke-width, $stroke-color) {
+    -webkit-text-fill-color: $fill-color;
+    -webkit-text-stroke-width: $stroke-width;
+    -webkit-text-stroke-color: $stroke-color;
+}
+
+.page-name{
+    text-align: right;
+    font-size: 9vw;
+    padding: 2rem 0px;
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 10px;
 }

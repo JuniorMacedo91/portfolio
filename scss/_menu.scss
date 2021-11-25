@@ -49,10 +49,6 @@ nav{
     overflow: hidden;
     @include transitionEase();
 
-    li{
-        color: #fff;
-    }
-
     .nav-menu> a{
         text-align: center;
         padding: 5px;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:wght@700&family=Poppins:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Poppins:wght@300;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@
 }
 
 a, li, i {
-  color: #000000;
+  color: #fff;
 }
 
 a:hover, li:hover, i:hover {
@@ -34,19 +34,28 @@ p {
 
 button {
   padding: 5px 15px;
-  border-radius: 20px;
-  color: #000000;
+  border-radius: 5px;
+  color: #fff;
   background-color: transparent;
-  border: 2px solid #000000;
+  border: 1px solid #fff;
   font-size: 1rem;
   cursor: pointer;
 }
 
 button:hover {
-  color: white;
-  background-color: black;
+  color: #000000;
+  background-color: #fff;
   -webkit-transition: .2s ease-in;
   transition: .2s ease-in;
+}
+
+.page-name {
+  text-align: right;
+  font-size: 9vw;
+  padding: 2rem 0px;
+  font-family: 'Alfa Slab One', cursive;
+  text-transform: uppercase;
+  letter-spacing: 10px;
 }
 
 .home-container {
@@ -62,7 +71,7 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #000000;
+  background-color: #121212;
   color: #fff;
 }
 
@@ -81,7 +90,7 @@ header {
   padding: 1rem 3.5rem;
   top: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #121212;
   z-index: 4;
 }
 
@@ -102,10 +111,6 @@ header .logo-wrapper__icon {
   margin-right: 1rem;
 }
 
-header .logo-wrapper h4 {
-  color: #848484;
-}
-
 .home-content {
   display: -ms-grid;
   display: grid;
@@ -117,9 +122,9 @@ header .logo-wrapper h4 {
 }
 
 .home-content h1 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Anton', sans-serif;
   font-size: 7vw;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
   text-align: right;
 }
 
@@ -129,21 +134,8 @@ header .logo-wrapper h4 {
       align-self: flex-end;
 }
 
-.home-content i {
-  color: white;
-}
-
 .home-content button {
-  color: #fff;
-  border: 2px solid #fff;
   margin-bottom: 12px;
-}
-
-.home-content button:hover {
-  color: black;
-  background-color: white;
-  -webkit-transition: .2s ease-in;
-  transition: .2s ease-in;
 }
 
 .icon-wrapper {
@@ -167,7 +159,7 @@ header .logo-wrapper h4 {
 }
 
 footer {
-  background-color: #000000;
+  background-color: #121212;
   color: #fff;
   padding: 2rem;
   text-align: center;
@@ -186,7 +178,6 @@ footer .icons {
 }
 
 footer i {
-  color: white;
   font-size: 2.5rem;
   padding-bottom: 1rem;
 }
@@ -262,10 +253,6 @@ nav {
   transition: all .5s linear;
 }
 
-nav li {
-  color: #fff;
-}
-
 nav .nav-menu > a {
   text-align: center;
   padding: 5px;
@@ -274,8 +261,17 @@ nav .nav-menu > a {
 
 .about {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 1.5rem 3.5rem;
+}
+
+.about .page-name {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000000;
+}
+
+.about .about-content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,31 +283,34 @@ nav .nav-menu > a {
           align-items: center;
 }
 
-.about__title, .about__content {
+.about .about-content-wrapper .about__title, .about .about-content-wrapper .about__content {
   padding: 4rem 1rem;
 }
 
-.about__title {
+.about .about-content-wrapper .about__title {
   border-right: 2px solid black;
   padding-bottom: 6rem;
 }
 
-.about__title h1 {
+.about .about-content-wrapper .about__title h1 {
   font-size: 4.5rem;
   text-align: right;
-  font-family: "Playfair Display", sans-serif;
-}
-
-.about__content {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  font-family: 'Anton', sans-serif;
 }
 
 #projects {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 1.5rem 3.5rem;
   text-align: right;
+  background-color: #121212;
+}
+
+#projects .page-name {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+  text-align: left;
 }
 
 .grid-pictures__items {
@@ -328,8 +327,8 @@ nav .nav-menu > a {
 .grid-pictures img {
   position: relative;
   width: 100%;
-  -webkit-box-shadow: 0px 5px 10px rgba(11, 11, 11, 0.476);
-          box-shadow: 0px 5px 10px rgba(11, 11, 11, 0.476);
+  -webkit-box-shadow: 0px 8px 12px black;
+          box-shadow: 0px 8px 12px black;
 }
 
 .picture-wrapper {
@@ -391,7 +390,7 @@ nav .nav-menu > a {
 
 #contact {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 1.5rem 3.5rem;
 }
 /*# sourceMappingURL=main.css.map */
