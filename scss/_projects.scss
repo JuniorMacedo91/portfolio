@@ -1,0 +1,23 @@
+.grid-pictures{
+    @include container();
+  
+    &__items{
+        display: grid;
+        place-items: center;
+        grid-template: auto auto auto / auto auto auto;
+        gap: 1.5rem;
+    }
+}
+
+img{
+    width: 100%;
+    box-shadow:  0px 5px 10px rgba(11, 11, 11, 0.476);
+}
+
+
+@media screen and (max-width:576px){
+    .grid-pictures__items{
+        display: grid;
+        grid-template: none;
+    }
+}
