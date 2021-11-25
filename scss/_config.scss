@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:wght@700&family=Poppins:wght@300;500&display=swap');
 
-$primary-color: #00394B;
 $text-color:#848484;
 
 *{
@@ -11,23 +10,29 @@ $text-color:#848484;
     outline: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
-    font-weight: normal;
+    font-weight: lighter;
 }
 
 a, li, i{
-    color: $primary-color;
+    color: #000000;
 }
 
 p{
     color: $text-color;
     margin: 1rem 0px;
+    font-size: 1.2rem;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 button{
     padding: 5px 15px;
     border-radius: 20px;
+    color: #000000;
     background-color: transparent;
-    border: 2px solid black;
+    border: 2px solid #000000;
     font-size: 1rem;
     cursor: pointer;
 
