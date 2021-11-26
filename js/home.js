@@ -15,3 +15,6 @@ menuBurger.addEventListener('click', ()=>{
     }
 })
 
+navbar.addEventListener('click', ()=>{
+    navbar.style.width = '0'
+})
