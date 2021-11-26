@@ -14,6 +14,7 @@ header{
     left: 0;
     background-color: $primary-color;
     z-index: 4;
+    box-shadow:  0px 5px 15px rgb(0, 0, 0);
 
     .logo-wrapper{
         @include display-flex(center,center);
