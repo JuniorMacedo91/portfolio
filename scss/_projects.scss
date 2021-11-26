@@ -54,7 +54,6 @@
 
         a{
             justify-self: right;
-            font-size: 2.5rem;
         }
 
         &:hover{
@@ -66,14 +65,4 @@
     }
 }
 
-
-
-
-@media screen and (max-width:576px){
-    .grid-pictures__items{
-        display: grid;
-        grid-template: none;
-        padding: 1.5rem 0;
-    }
-}
 

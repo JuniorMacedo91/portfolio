@@ -5,9 +5,6 @@
     color: #fff;
 }
 
-
-
-
 header{
     @include display-flex(space-between, center);
     position: fixed;
@@ -29,13 +26,13 @@ header{
 
 .home-content{
     display: grid;
-    grid-template: 90% 20%/ 50% auto;
+    grid-template: auto 20%/ 50% auto;
     place-content: center;
     gap: 0px 1rem;
 
     h1{
         font-family: 'Anton', sans-serif;
-        font-size: 7vw;
+        font-size: 5rem;
         letter-spacing: 5px;
         text-align: right;
     }
@@ -44,13 +41,10 @@ header{
         max-width: 350px;
         align-self: flex-end;
     };
-
-    button{margin-bottom: 12px}
 }
 
 .icon-wrapper{
     @include display-flex(initial, flex-end);
-    font-size: 2.5rem;
     grid-column-end:  3;
     align-self: flex-end;
 
@@ -69,8 +63,5 @@ footer{
         @include display-flex(center,center);
     }
 
-    i{
-        font-size: 2.5rem;
-        padding-bottom: 1rem;
-    }
+    i{padding-bottom: 1rem;}
 }

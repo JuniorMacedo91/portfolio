@@ -7,9 +7,10 @@
 
     .about-content-wrapper{
         @include display-flex(center,center);
+        padding: 2rem 0px;
 
         .about__title, .about__content{
-            padding:4rem 1rem;
+            padding:4rem 1.5rem;
         }
     
         .about__title{

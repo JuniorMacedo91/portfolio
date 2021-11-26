@@ -1,3 +1,61 @@
 #contact{
     @include container(100%,100%);
+    display: grid;
+    place-content: center;
+
+    .page-name{
+        @include stroke(transparent, 2px, #000000)
+    }
+
+    
+    form{
+        display: grid;
+        gap: 1rem;
+
+        .send-email-btn{
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: #000000;
+            background-color: transparent;
+            border: 1.5px solid #000000;
+            font-size: 1rem;
+            cursor: pointer;
+        
+            &:hover{
+                color: #fff;
+                background-color: #000000;
+                transition: .2s ease-in;
+            }
+        }
+    }
 }
+
+.input-wrapper{
+    padding-top: 10px;
+
+    input{
+        width: 400px;
+        padding:3px 3rem;
+        border:none;
+        border-bottom: 1.5px solid rgb(221, 220, 220);
+        font-size: 1rem;
+    }
+    
+    i{
+        position: absolute;
+        color: #000000;
+        font-size: 1.5rem;
+        padding:0px 5px;
+    }
+
+    ::placeholder{
+        color: #000000;
+    }
+}
+
+textarea{
+    border: 1.5px solid rgb(221, 220, 220);
+    resize: none;
+    border-radius: 5px;
+}
+
