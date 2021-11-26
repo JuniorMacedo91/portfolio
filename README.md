@@ -1,2 +1,2 @@
-# portfolio-jr
+# Portfolio
 Portfolio to demonstrate all about my projects and evolution coding
