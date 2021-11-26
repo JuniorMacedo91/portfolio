@@ -9,7 +9,6 @@
             font-size: 1.3rem;
         }
     }
-
  }
 
 @media screen and (max-width:576px){
@@ -23,6 +22,9 @@
         h3{
             font-size: 1rem;
         }
+    }
+    .home-container{
+        background: $primary-color;
     }
 
     .home-content{

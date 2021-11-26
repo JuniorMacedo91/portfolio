@@ -1,6 +1,9 @@
 .home-container{
     @include container(100%, 100vh);
     @include display-flex(center,center);
+    background:linear-gradient(to right, $primary-color 50%, transparent),
+    url(/dist/assets/bg-pic.jpg) right no-repeat ;
+    background-size: contain;
     background-color: $primary-color;
     color: #fff;
 }
