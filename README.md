@@ -1,9 +1,7 @@
-# Portfolio
-
-# <p align="center"> Round 6 </p>
+# <p align="center"> PORTFOLIO</p>
 
 <p align="center">
-  <img src="roundsix.png" width="750px">
+  <img src="portfolio.png" width="750px">
 </p>
 
 # About:
