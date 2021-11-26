@@ -198,8 +198,8 @@ footer i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
 }
 
 .menu-btn__burger {
@@ -207,8 +207,8 @@ footer i {
   height: 3px;
   background-color: #fff;
   border-radius: 5px;
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
 }
 
 .menu-btn__burger::before, .menu-btn__burger::after {
@@ -218,8 +218,8 @@ footer i {
   height: 3px;
   background-color: #fff;
   border-radius: 5px;
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
 }
 
 .menu-btn__burger::before {
@@ -252,8 +252,8 @@ nav {
           backdrop-filter: blur(20px);
   z-index: -3;
   overflow: hidden;
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
 }
 
 nav .nav-menu > a {
@@ -395,7 +395,6 @@ nav .nav-menu > a {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #000000;
-  text-align: right;
 }
 
 #contact form {
@@ -483,7 +482,7 @@ textarea {
   h1 {
     font-size: 1rem;
   }
-  p {
+  h2, p {
     font-size: 1rem;
   }
   i {
@@ -521,7 +520,6 @@ textarea {
   }
   .home-content h2 {
     text-align: center;
-    font-size: 12px;
     padding-top: 1rem;
   }
   .home-content .icon-wrapper {
@@ -545,7 +543,7 @@ textarea {
     text-align: center;
   }
   .picture-wrapper h1 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .grid-pictures__items {
     display: -ms-grid;

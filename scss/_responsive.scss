@@ -13,7 +13,7 @@
 
 @media screen and (max-width:576px){
     h1{font-size: 1rem;}
-    p{font-size: 1rem;}
+    h2,p{font-size: 1rem;}
     i{font-size: 2rem;}
     button{font-size: 12px;}
 
@@ -40,7 +40,6 @@
     
         h2{
             text-align: center;
-            font-size: 12px;
             padding-top: 1rem;
         };
 
@@ -68,7 +67,7 @@
 
     .picture-wrapper{
         h1{
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
     }
 

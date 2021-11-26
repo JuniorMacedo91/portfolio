@@ -5,7 +5,6 @@
 
     .page-name{
         @include stroke(transparent, 2px, #000000);
-        text-align:right;
     }
 
     form{
