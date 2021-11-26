@@ -15,9 +15,6 @@ I bring in a simple way all about me in each line code. Each detail can demonstr
 - A minimalist design;
 - A little bit about me;
 - The last projects;
-- 
-
-The main goal about doing it was created something from scratch and put into practice all knowlegde about Bootstrap, Sass, improving Javascript and API.
 
 ## Features:
 - [x] Links to access all repositories and linkedin;
@@ -26,6 +23,14 @@ The main goal about doing it was created something from scratch and put into pra
 - [ ] Scroll animation;
 - [ ] Close menu mobile;
 - [ ] Full Page Scroll;
+
+## Javascript main challenges:
+
+## CSS main challenges:
+
+- Improve Sass structure, avoinding code repeated;
+- Create a grid layout, to focus on more about how it works;
+- Create a responsive layout;
 
 ## Responsive layout:
 <p align="center">
