@@ -35,6 +35,10 @@ p{
     font-size: 1.2rem;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar{
     display: none;
 }

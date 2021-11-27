@@ -25,6 +25,7 @@ I bring in a simple way all about me in each line code. Each detail can demonstr
 - [ ] Scroll animation;
 
 ## Javascript main challenges:
+- How to create a Form Validation;
 
 ## CSS main challenges:
 
