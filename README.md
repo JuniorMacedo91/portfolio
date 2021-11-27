@@ -14,7 +14,7 @@ I bring in a simple way all about me in each line code. Each detail can demonstr
 ## Scrolling down website, you're gonna see: 
 - A minimalist design;
 - A little bit about me;
-- The last projects;
+- The last six projects;
 
 ## Features:
 - [x] Links to access all repositories and linkedin;
