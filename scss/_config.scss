@@ -14,6 +14,10 @@ $text-color:#848484;
     font-weight: lighter;
 }
 
+#home, #about, #projects{
+    display: none;
+}
+
 a, li, i{
     color: #fff;
 

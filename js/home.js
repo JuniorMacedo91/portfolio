@@ -1,6 +1,9 @@
 const menuBurger = document.querySelector('.menu-btn')
 const navbar = document.querySelector('.navbar')
 
+menuBurger.addEventListener('click', openMenu)
+navbar.addEventListener('click', closeMenu)
+
 let menuToggle = false
 
 function openMenu(){
@@ -20,5 +23,3 @@ function closeMenu(){
     navbar.style.width = '0'
 }
 
-menuBurger.addEventListener('click', openMenu)
-navbar.addEventListener('click', closeMenu)
