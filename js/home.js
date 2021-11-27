@@ -1,8 +1,10 @@
 const menuBurger = document.querySelector('.menu-btn')
 const navbar = document.querySelector('.navbar')
+const dataScrollAnimation = document.querySelectorAll('[data-scrollAnimation]')
 
 menuBurger.addEventListener('click', openMenu)
 navbar.addEventListener('click', closeMenu)
+window.addEventListener('scroll', activeScrollAnimation)
 
 let menuToggle = false
 
@@ -23,11 +25,10 @@ function closeMenu(){
     navbar.style.width = '0'
 }
 
-const dataScrollAnimation = document.querySelectorAll('[data-scrollAnimation]')
 
 function activeScrollAnimation(){
     dataScrollAnimation.forEach(element =>{
-        if(element.getBoundingClientRect().top < window.innerHeight){
+        if(element.getBoundingClientRect().top < (window.innerHeight / 1.6)){
             element.classList.add('animate')
         } else{
             element.classList.remove('animate')
@@ -35,4 +36,3 @@ function activeScrollAnimation(){
     })
 }
 
-window.addEventListener('scroll', activeScrollAnimation)

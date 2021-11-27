@@ -22,9 +22,12 @@ I bring in a simple way all about me in each line code. Each detail can demonstr
 - [x] Responsive layout;
 - [x] Close menu mobile;
 - [x] Full Page Scroll;
-- [ ] Scroll animation;
+- [x] Scroll animation;
 
 ## Javascript main challenges:
+- Focus on improving scroll animation function;
+
+## Node.js main challenges:
 - How to send form datas to email;
 
 ## CSS main challenges:
