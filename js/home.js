@@ -23,3 +23,16 @@ function closeMenu(){
     navbar.style.width = '0'
 }
 
+const dataScrollAnimation = document.querySelectorAll('[data-scrollAnimation]')
+
+function activeScrollAnimation(){
+    dataScrollAnimation.forEach(element =>{
+        if(element.getBoundingClientRect().top < window.innerHeight){
+            element.classList.add('animate')
+        } else{
+            element.classList.remove('animate')
+        }
+    })
+}
+
+window.addEventListener('scroll', activeScrollAnimation)

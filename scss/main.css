@@ -11,10 +11,6 @@
   font-weight: lighter;
 }
 
-#home, #about, #projects {
-  display: none;
-}
-
 a, li, i {
   color: #fff;
 }
@@ -258,7 +254,7 @@ nav {
   height: 100vh;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.211);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   z-index: -3;
@@ -576,5 +572,15 @@ textarea {
   form {
     max-width: 80vw;
   }
+}
+
+[data-scrollAnimation] {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+[data-scrollAnimation].animate {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

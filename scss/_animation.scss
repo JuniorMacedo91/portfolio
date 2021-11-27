@@ -1,0 +1,8 @@
+[data-scrollAnimation]{
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-scrollAnimation].animate{
+    opacity: 1;
+}
