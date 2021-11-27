@@ -20,9 +20,9 @@ I bring in a simple way all about me in each line code. Each detail can demonstr
 - [x] Links to access all repositories and linkedin;
 - [x] Form to get in touch( Still building);
 - [x] Responsive layout;
+- [x] Close menu mobile;
+- [x] Full Page Scroll;
 - [ ] Scroll animation;
-- [ ] Close menu mobile;
-- [ ] Full Page Scroll;
 
 ## Javascript main challenges:
 
@@ -31,6 +31,7 @@ I bring in a simple way all about me in each line code. Each detail can demonstr
 - Improve Sass structure, avoinding code repeated;
 - Create a grid layout, to focus on more about how it works;
 - Create a responsive layout;
+- Learn a simple way of make a page transition with scroll-behavior;
 
 ## Responsive layout:
 <p align="center">
