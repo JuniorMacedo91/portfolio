@@ -22,6 +22,10 @@ a:hover, li:hover, i:hover {
   transition: .1s ease-in;
 }
 
+a, li, i, button {
+  cursor: pointer;
+}
+
 i {
   font-size: 2.5rem;
 }
