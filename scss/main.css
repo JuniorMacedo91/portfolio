@@ -43,7 +43,6 @@ button {
   background-color: transparent;
   border: 1px solid #fff;
   font-size: 1rem;
-  cursor: pointer;
 }
 
 button:hover {
@@ -150,9 +149,9 @@ header .logo-wrapper__icon {
   -webkit-box-pack: initial;
       -ms-flex-pack: initial;
           justify-content: initial;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-column-end: 3;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -341,6 +340,10 @@ nav .nav-menu > a {
 
 .picture-wrapper .overlay {
   position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 80% auto;
+      grid-template-rows: auto 80% auto;
   width: 100%;
   height: 100%;
   top: 0;
@@ -348,14 +351,9 @@ nav .nav-menu > a {
   color: #fff;
   text-align: left;
   overflow: hidden;
-  cursor: pointer;
   opacity: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto 80% auto;
-      grid-template-rows: auto 80% auto;
 }
 
 .picture-wrapper .overlay h1 {
@@ -386,9 +384,14 @@ nav .nav-menu > a {
   width: 100%;
   height: 100%;
   padding: 1.5rem 2.5rem;
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #contact .page-name {
@@ -398,12 +401,10 @@ nav .nav-menu > a {
 }
 
 #contact form {
-  width: 400px;
-  padding: 2rem 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  width: 400px;
+  padding: 4rem 0px;
   gap: 1rem;
 }
 
@@ -414,7 +415,6 @@ nav .nav-menu > a {
   background-color: transparent;
   border: 1.5px solid #000000;
   font-size: 1rem;
-  cursor: pointer;
 }
 
 #contact form .send-email-btn:hover {
@@ -431,9 +431,9 @@ nav .nav-menu > a {
 .input-wrapper input {
   width: 100%;
   padding: 3px 3rem;
+  font-size: 1rem;
   border: none;
   border-bottom: 1.5px solid #dddcdc;
-  font-size: 1rem;
 }
 
 .input-wrapper i {
@@ -444,18 +444,22 @@ nav .nav-menu > a {
 }
 
 .input-wrapper ::-webkit-input-placeholder {
+  font-size: 14px;
   color: #000000;
 }
 
 .input-wrapper :-ms-input-placeholder {
+  font-size: 14px;
   color: #000000;
 }
 
 .input-wrapper ::-ms-input-placeholder {
+  font-size: 14px;
   color: #000000;
 }
 
 .input-wrapper ::placeholder {
+  font-size: 14px;
   color: #000000;
 }
 
@@ -475,6 +479,11 @@ textarea {
   }
   .picture-wrapper h1 {
     font-size: 1.3rem;
+  }
+  #contact {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
   }
 }
 
@@ -498,7 +507,9 @@ textarea {
     font-size: 1rem;
   }
   .home-container {
-    background: #121212;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #121212), to(transparent)), url(/dist/assets/bg-pic.jpg) top no-repeat;
+    background: linear-gradient(to top, #121212 30%, transparent), url(/dist/assets/bg-pic.jpg) top no-repeat;
+    background-size: cover;
   }
   .home-content {
     height: 100%;
@@ -551,7 +562,7 @@ textarea {
     grid-template: none;
   }
   form {
-    max-width: 300px;
+    max-width: 80vw;
   }
 }
 /*# sourceMappingURL=main.css.map */

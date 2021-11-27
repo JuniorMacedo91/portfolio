@@ -48,7 +48,7 @@ header{
 }
 
 .icon-wrapper{
-    @include display-flex(initial, flex-end);
+    @include display-flex(initial, center);
     grid-column-end:  3;
     align-self: flex-end;
 

@@ -9,6 +9,11 @@
             font-size: 1.3rem;
         }
     }
+
+    #contact{
+        display: grid;
+        place-content: center;
+    }
  }
 
 @media screen and (max-width:576px){
@@ -24,7 +29,9 @@
         }
     }
     .home-container{
-        background: $primary-color;
+        background:linear-gradient(to top, $primary-color 30%, transparent),
+        url(/dist/assets/bg-pic.jpg) top no-repeat ;
+        background-size: cover;
     }
 
     .home-content{
@@ -77,6 +84,6 @@
     }
 
     form{
-        max-width: 300px;
+        max-width:80vw;
     }
 }

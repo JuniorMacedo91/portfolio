@@ -1,17 +1,15 @@
 #contact{
     @include container(100%,100%);
-    display: grid;
-    place-content: center;
+    @include display-flex(space-around,center);
 
     .page-name{
         @include stroke(transparent, 2px, #000000);
     }
 
     form{
-        width: 400px;
-        padding: 2rem 0px;
         display: grid;
-        justify-self: center;
+        width: 400px;
+        padding: 4rem 0px;
         gap: 1rem;
 
         .send-email-btn{
@@ -21,7 +19,6 @@
             background-color: transparent;
             border: 1.5px solid #000000;
             font-size: 1rem;
-            cursor: pointer;
         
             &:hover{
                 color: #fff;
@@ -38,9 +35,9 @@
     input{
         width: 100%;
         padding:3px 3rem;
+        font-size: 1rem;
         border:none;
         border-bottom: 1.5px solid rgb(221, 220, 220);
-        font-size: 1rem;
     }
     
     i{
@@ -51,6 +48,7 @@
     }
 
     ::placeholder{
+        font-size: 14px;
         color: #000000;
     }
 }
