@@ -9,6 +9,18 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-221500005-1');
+ 
+ document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('[href*="#contact"]').forEach(function(button){
+        button.addEventListener('click', function(){
+            console.log('Contato clicado')
+
+            gtag('event', 'clicar', {
+                'event_category': 'contato',
+            });
+        })
+    })
+})
 </script>
 
     <meta charset="UTF-8">
